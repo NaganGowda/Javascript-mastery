@@ -140,3 +140,24 @@ if (le == 0) {
 } else {
   console.log("no");
 }
+
+falsy values
+
+undefined
+null
+0
+""
+false
+
+truthy values
+anything else than above
+1,-1
+"k"
+
+let a = 1;
+
+if (a) {
+  console.log("yes");
+} else {
+  console.log("no");
+}
