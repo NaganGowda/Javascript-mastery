@@ -54,6 +54,10 @@ console.log(arr2); // [1, 2, 3, 4] (modified)
 let originalArray = [1, 2, 3];
 let clonedArray = [...originalArray];
 
+let a = "Hello";
+let b = [...a];
+console.log(b); //output will be [ H,e,l,l,o ]
+
 // slice method
 let originalArray = [1, 2, 3];
 let clonedArray = originalArray.slice();
@@ -65,3 +69,27 @@ let clonedArray = originalArray.concat();
 //from method
 let originalArray = [1, 2, 3];
 let clonedArray = Array.from(originalArray);
+
+//for loop
+
+let array_1 = [1, 2, 3, 4, 5, 6, 7];
+
+for (let a of array_1) {
+  console.log(a); // gives values of an array
+}
+
+for (let a in array_1) {
+  console.log(a); // gives index values of elements in an array
+}
+
+//for of loop and traditional for loop are most used
+
+//traditional for loop
+
+for (let i = 0; i < 10; i++) {
+  console.log(i); // gives output from 0 to 9 we can i initial value and final value also increment value
+}
+
+for (let i = 2; i <= 20; i += 2) {
+  console.log(i); // i starts from 2 ends at 20 and increment by 2
+}
