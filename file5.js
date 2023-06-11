@@ -70,3 +70,60 @@ for (let key in person) {
 for (let key in person) {
   console.log(key + " : " + person[key]);
 }
+
+console.log(Object.keys(person), typeof Object.keys(person));
+// prints object keys , type is object
+
+const val = Array.isArray(Object.keys(person)); //checks is it an array
+console.log(val); //output is true
+
+for (let key of Object.keys(person)) {
+  console.log(key); // gives keys of an object
+}
+
+for (let key of Object.keys(person)) {
+  console.log(person[key]); // gives values of an object
+}
+
+// Computed properties
+//allows you to dynamically define object property names using expressions or variables.
+//Instead of using a fixed property name
+const key1 = "objkey1";
+const key2 = "objkey2";
+
+const value1 = "myvalue1";
+const value2 = "myvalue2";
+
+let person = {
+  [key1]: value1,
+  [key2]: value2,
+};
+
+const obj = {};
+
+obj[key1] = value1;
+obj[key2] = value2;
+console.log(obj);
+
+const obj = {
+  key1: "value1",
+  key2: "value2",
+  key1: "value3", // duplicate key in this case last key value is considered
+};
+
+console.log(obj);
+
+//spread operator in object
+const obj1 = {
+  key1: "value1",
+  key2: "value2",
+};
+
+const obj2 = {
+  key3: "value3",
+  key4: "value4",
+};
+
+const newObj = { ...obj1, ...obj2, key5: "value5" };
+
+console.log(newObj);
