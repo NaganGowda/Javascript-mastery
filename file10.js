@@ -88,3 +88,36 @@ const mySet = new Set([1, 2, 3, 4, 5]);
 for (let item of mySet) {
   console.log(item);
 }
+
+// maps Object
+// map is an iterable
+// we can run for of loop with map object
+// but object literal we can't run for of loop
+// we can run only for in loop
+
+// store data in ordered fashion
+// can't get order in object literal
+
+// store key value pair(like object)
+// duplicate keys are not allowed like objects
+
+// difference b/w maps and objects
+// objects can only have string or symbol as key
+
+// in maps you can see anything as key
+// like array, number, string
+
+// Map Object
+const myMap = new Map();
+myMap.set("name", "John");
+myMap.set("age", 30);
+
+console.log(myMap.get("name")); // Output: John
+
+// Object Literal
+const myObject = {
+  name: "John",
+  age: 30,
+};
+
+console.log(myObject.name); // Output: John
